@@ -1,7 +1,12 @@
 [
     {
         "username": "peter",
-        "email": "peter@example.com",
-        "password": "scrypt:32768:8:1$..."
+        "email": "peter@dkit.ie",
+        "password": "12345"
+    },
+    {
+        "username": "tom",
+        "email": "t@tt.tt",
+        "password": "12345"
     }
 ]

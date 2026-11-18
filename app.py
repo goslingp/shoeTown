@@ -13,6 +13,8 @@ from flask import (
     flash
 )
 
+import sys
+
 import json
 from datetime import datetime
 
@@ -48,6 +50,7 @@ def save_orders(orders):
     with open(ORDER_FILE, "w", encoding="utf-8") as f:
         json.dump(orders, f, indent=4)
 
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
 
@@ -78,7 +81,7 @@ def register():
         users.append({
             "username": username,
             "email": email,
-            "password": generate_password_hash(password)
+            "password": password
         })
 
         save_users(users)
@@ -102,6 +105,7 @@ def login():
         password = request.form["password"]
 
         users = load_users()
+        
 
         user = next(
             (
@@ -111,10 +115,8 @@ def login():
             None
         )
 
-        if user and check_password_hash(
-            user["password"],
-            password
-        ):
+        if user["password"] == password:
+            
 
             session["user"] = username
 
@@ -226,18 +228,21 @@ def cart():
     )
 
 @app.route("/profile")
-# @login_required
+@login_required
 def profile():
+
+    username = session.get("user")
 
     users = load_users()
 
     user = next(
-        (
-            u for u in users
-            if u["username"] == session["user"]
-        ),
+        (u for u in users if u["username"] == username),
         None
     )
+
+    if user is None:
+        flash("User not found")
+        return redirect(url_for("logout"))
 
     return render_template(
         "profile.html",
