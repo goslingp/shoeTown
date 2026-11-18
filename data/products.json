@@ -4,7 +4,7 @@
     "name": "Nike Air Max",
     "brand": "Nike",
     "price": 129.99,
-    "image": "nike.jpg",
+    "image": "nikeairmax.webp",
     "description": "Comfortable running shoe"
   },
   {
@@ -12,7 +12,7 @@
     "name": "Adidas Ultraboost",
     "brand": "Adidas",
     "price": 149.99,
-    "image": "adidas.jpg",
+    "image": "adidasultraboost5.webp",
     "description": "High-performance sports shoe"
   },
   {
@@ -20,7 +20,7 @@
     "name": "Puma Velocity",
     "brand": "Puma",
     "price": 99.99,
-    "image": "puma.jpg",
+    "image": "PumaVelocity.webp",
     "description": "Lightweight trainer"
   }
 ]
