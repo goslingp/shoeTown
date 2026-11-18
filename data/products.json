@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Nike Air Max",
+    "brand": "Nike",
+    "price": 129.99,
+    "image": "nike.jpg",
+    "description": "Comfortable running shoe"
+  },
+  {
+    "id": 2,
+    "name": "Adidas Ultraboost",
+    "brand": "Adidas",
+    "price": 149.99,
+    "image": "adidas.jpg",
+    "description": "High-performance sports shoe"
+  },
+  {
+    "id": 3,
+    "name": "Puma Velocity",
+    "brand": "Puma",
+    "price": 99.99,
+    "image": "puma.jpg",
+    "description": "Lightweight trainer"
+  }
+]

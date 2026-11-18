@@ -1,0 +1,7 @@
+[
+    {
+        "username": "peter",
+        "email": "peter@example.com",
+        "password": "scrypt:32768:8:1$..."
+    }
+]

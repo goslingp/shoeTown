@@ -1,0 +1,18 @@
+@app.route("/profile")
+@login_required
+def profile():
+
+    users = load_users()
+
+    user = next(
+        (
+            u for u in users
+            if u["username"] == session["user"]
+        ),
+        None
+    )
+
+    return render_template(
+        "profile.html",
+        user=user
+    )
