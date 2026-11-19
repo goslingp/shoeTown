@@ -4,7 +4,7 @@
     "name": "Nike Air Max",
     "brand": "Nike",
     "price": 129.99,
-    "image": "nikeAirMax.webp",
+    "image": "nikeairmax.webp",
     "description": "Comfortable running shoe"
   },
   {
@@ -12,7 +12,7 @@
     "name": "Adidas Ultraboost",
     "brand": "Adidas",
     "price": 149.99,
-    "image": "adidasUltraboost5.webp",
+    "image": "adidasultraboost5.webp",
     "description": "High-performance sports shoe"
   },
   {
