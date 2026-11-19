@@ -188,7 +188,7 @@ def product(product_id):
     if product is None:
         return "Product not found", 404
     
-    # flash(product)
+    #flash(product)
     return render_template(
         "product.html",
         product=product
